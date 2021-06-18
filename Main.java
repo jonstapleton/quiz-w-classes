@@ -2,19 +2,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        
+        Question q1 = new Question();
+        q1.question = "2 + 2";
+        q1.answer = 4;
+        q1.ask();
 
-        System.out.println("What is 2 + 2?");
-        int ans = s.nextInt();
-
-        if(ans == 4) {
-            System.out.println("Correct!");
-        } else {
-            System.out.println("Incorrect!");
-        }
-
-        // End the quiz
-        System.out.println("That's all the questions!");
-        s.close();
+        Question q2 = new Question();
+        q2.question = "5 + 2";
+        q2.answer = 7;
+        q2.ask();
+        
     }
 }

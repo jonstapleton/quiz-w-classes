@@ -1,16 +1,22 @@
 import java.util.Scanner;
 
 public class Question {
-    // instance variables go here
-
-    // methods go here ----
-
+    // instance variables
+    public String question = "??";
+    public int answer = 0;
     
-
-    // This method should contain 
-    // the code for asking a question
     // and evaluating the answer
     public void ask() {
+        Scanner s = new Scanner(System.in);
+        
+        // Question 1
+        System.out.println("What is " + question + "?");
+        int userInput = s.nextInt();
 
+        if(userInput == answer) {
+            System.out.println("Correct!");
+        } else {
+            System.out.println("Incorrect!");
+        }
     }
 }
